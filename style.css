@@ -1,69 +1,157 @@
-/* 1. Universal Selector - Applies to every element */
+/* Universal selector (required) */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
-/* 2. Element Selector & Typography (Font, Color, Style) */
+/* Element selector (required) */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f6f7fb;
+  color: #1f2937;
 }
 
-/* 3. ID Selector - Targets the specific date div or contact section */
-#current-date, #contact {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 2px solid #005a8c; /* Border requirement */
-    margin: 20px 0; /* Margin requirement */
+header, nav, main, footer, section, article {
+  display: block;
 }
 
-/* 4. Class Selector - Used for specific spans or containers */
-.tech-span {
-    color: #d9534f;
-    font-weight: bold;
-    font-style: italic;
+.site-header {
+  background-color: #0b2a5b;
+  color: white;
+  padding: 18px 16px;
+  border-bottom: 4px solid #071b3a;
 }
 
-/* 5. Descendant Selector - Targets list items specifically inside the nav */
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    list-style-type: none; /* List-style property requirement */
+/* Class selector (required) */
+.subtitle {
+  margin: 6px 0 0;
+  font-weight: 600;
 }
 
-/* 6. Pseudo-class Selector - Changes link color on hover */
-a:hover {
-    color: #ff6600;
-    text-decoration: underline;
+.tagline {
+  display: inline-block;
+  margin-top: 8px;
+  opacity: 0.95;
 }
 
-/* 7. Additional Box Model Properties (Padding/Margin/Border) */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* Descendant selector (required) */
+.site-nav ul {
+  list-style: none; /* list-style properties (required) */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+/* ID selector (required) */
+#currentDate {
+  margin-top: 10px;
 }
 
-header {
-    background-color: #005a8c;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+/* Typography + spacing (required) */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
-footer {
-    padding: 20px;
-    background: #333;
-    color: white;
-    text-align: center;
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb; /* border (required) */
+  padding: 16px;            /* padding (required) */
+  margin: 14px 0;           /* margin (required) */
+  border-radius: 10px;
 }
+
+.date-box {
+  background-color: #eef2ff;
+  padding: 10px;
+  border: 1px dashed #c7d2fe;
+  border-radius: 8px;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255,255,255,0.12);
+}
+
+/* Pseudo-class selector (required) */
+.nav-list a:hover {
+  background-color: rgba(255,255,255,0.22);
+  text-decoration: underline;
+}
+
+.bullet-list {
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.note {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.highlight {
+  background-color: #fff7ed;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-img {
+  max-width: 240px;
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+.fieldset {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0b2a5b;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.92;
+}
+
+.site-footer {
+  padding: 16px;
+  text-align: center;
+  background-color: #111827;
+  color: #e5e7eb;
+}
+.site-footer a {
+  color: #e5e7eb;
+}
+
