@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Résumé - Ayana Leonard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Ayana Leonard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Ayana Leonard, MBA</h1>
-        <nav>
-            <ul>
-                <li><a href="resume.html">Résumé</a></li>
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="career-goals.html">Career Goals</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header" id="top">
+    <h1>Ayana Leonard</h1>
+    <h2 class="subtitle">Résumé</h2>
+    <span class="tagline">MBA • Veteran • Aspiring Software Engineer</span>
+  </header>
 
-    <main>
-        <section>
-            <h2>Professional Summary</h2>
-            <p>Principal Software Engineer with over <strong>10 years of experience</strong> (Leonard, 2024).</p>
-            <hr>
-            <div id="current-date"></div> </section>
+  <nav class="site-nav" aria-label="Primary">
+    <ul class="nav-list">
+      <li><a href="resume.html" aria-current="page">Résumé</a></li>
+      <li><a href="cover-letter.html">Cover Letter</a></li>
+      <li><a href="career-goals.html">Career Goals</a></li>
+    </ul>
+  </nav>
 
-        <section>
-            <h3>Technical Skills</h3>
-            <p>Expertise in <span class="tech-span">FPGA/ASIC design</span> and Cloud Infrastructure (Leonard, 2024).</p>
-            <ul>
-                <li>Python, C++, CUDA</li>
-                <li>AI & Machine Learning</li>
-            </ul>
-        </section>
+  <main class="container">
+    <section class="card">
+      <h3>Contact</h3>
+      <p>
+        Email: <a href="mailto:ayana.leonard@example.com">ayana.leonard@example.com</a><br>
+        Phone: <a href="tel:+15555551234">(555) 555-1234</a>
+      </p>
+      <hr>
+      <p>
+        Location: Killeen, TX • Portfolio: <a href="#top">Top of Page</a>
+      </p>
+      <div id="currentDate" class="date-box">Loading today’s date…</div>
+    </section>
 
-        <article>
-            <h3>Education</h3>
-            <table>
-                <caption>Academic Credentials</caption>
-                <tr>
-                    <th>Institution</th>
-                    <th>Degree</th>
-                    <th>Year</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td>Western Governors University</td>
-                    <td>BS Software Engineering</td>
-                    <td>2025</td>
-                    <td>Online</td>
-                </tr>
-                <tr>
-                    <td>American Military University</td>
-                    <td>MBA</td>
-                    <td>2022</td>
-                    <td>Online</td>
-                </tr>
-            </table>
-        </article>
-    </main>
+    <section class="card">
+      <article>
+        <h3>Professional Summary</h3>
+        <p>
+          I am a disciplined, detail-oriented professional transitioning into software engineering.
+          My background includes technical troubleshooting, systems thinking, and building structured solutions.
+          <span class="highlight">I value clean code, clarity, and user-centered design.</span>
+        </p>
+        <p>
+          <strong>Strength:</strong> turning messy problems into organized systems.
+          <em>Goal:</em> ship reliable products that help real people.
+        </p>
+      </article>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Ayana Leonard | Source: Leonard Resume (2024)</p>
-    </footer>
+    <section class="card">
+      <h3>Skills</h3>
+      <ul class="bullet-list">
+        <li>HTML, CSS, JavaScript fundamentals</li>
+        <li>Debugging and problem-solving</li>
+        <li>Technical documentation and communication</li>
+        <li>Version control basics (Git/GitHub)</li>
+      </ul>
+      <p class="note">
+        Tip: I practice by building small projects and improving them through iteration.<br>
+        Consistency beats perfection.
+      </p>
+    </section>
 
-    <script>
-        document.getElementById('current-date').textContent = "Today's Date: " + new Date().toLocaleDateString();
-        console.log("Résumé page loaded successfully.");
-    </script>
+    <section class="card">
+      <h3>Experience & Education Snapshot</h3>
+
+      <!-- Table with caption, 4 columns, 3 rows (header + 2 rows = 3 rows total) -->
+      <table class="data-table">
+        <caption>Selected Experience & Education</caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Organization</th>
+            <th>Highlights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Military</td>
+            <td>Technical Specialist</td>
+            <td>U.S. Army</td>
+            <td>Maintained equipment; followed strict procedures</td>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>Software Engineering Student</td>
+            <td>WGU</td>
+            <td>Building web projects; applying debugging tools</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h3>Sources</h3>
+      <p>
+        I referenced HTML table and semantic element guidance (W3Schools, 2024) and general HTML structure examples
+        from MDN Web Docs (MDN, 2024).
+      </p>
+      <h4>References</h4>
+      <ol class="ref-list">
+        <li>W3Schools. (2024). HTML Tables &amp; Semantic Elements. (General reference).</li>
+        <li>MDN Web Docs. (2024). HTML: HyperText Markup Language. (General reference).</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="yearStamp">2026</span> Ayana Leonard • <a href="#top">Back to top</a></p>
+  </footer>
 </body>
 </html>
-<p>Email: ayana@email.com<br>Phone: (555) 555-5555</p>
-<p><em>Focused on building scalable, user-centered systems.</em></p>
-
-
