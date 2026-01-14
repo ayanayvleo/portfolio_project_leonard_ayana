@@ -1,128 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Career Goals | Ayana Leonard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <h1>Ayana Leonard, MBA</h1>
-    <h2 class="subtitle">Career Goals</h2>
-    <span class="tagline">Growth • Impact • Consistency</span>
-  </header>
 
-  <nav class="site-nav" aria-label="Primary Navigation">
-    <ul class="nav-list">
-      <li><a href="resume.html">Résumé</a></li>
-      <li><a href="cover-letter.html">Cover Letter</a></li>
-      <li><a href="career-goals.html" aria-current="page">Career Goals</a></li>
-    </ul>
-  </nav>
+<header>
+  <h1>Ayana Leonard</h1>
+  <h2>Career Goals</h2>
+</header>
 
-  <main class="container">
-    <section class="card">
-      <h3>Career Aspirations</h3>
-      <p>
-        My goal is to continue growing as a technical leader who can architect reliable systems and drive measurable outcomes.
-        I am focused on building and improving web projects, strengthening debugging skills, and maintaining professional communication
-        in both code and documentation.
-      </p>
-      <p>
-        <strong>Short-term:</strong> strengthen HTML/CSS/JavaScript fundamentals and ship polished coursework deliverables.<br>
-        <strong>Long-term:</strong> lead high-impact engineering work across AI/ML and scalable infrastructure.
-      </p>
-    </section>
+<nav>
+  <a href="resume.html">Résumé</a> |
+  <a href="cover-letter.html">Cover Letter</a> |
+  <a href="career-goals.html">Career Goals</a>
+</nav>
 
-    <section class="card">
-      <h3>Image</h3>
-      <img class="profile-img" src="profile.jpg" alt="Profile image of Ayana Leonard" />
-      <p class="note">This image is stored locally in the project folder.</p>
-    </section>
+<main>
 
-    <section class="card">
-      <h3>Audio</h3>
-      <audio controls>
-        <source src="audio.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <p class="note">Use an <strong>.mp3</strong> or <strong>.wav</strong> file named <span class="inline-code">audio.mp3</span> to match the rubric.</p>
-    </section>
+<section>
+  <h3>Career Aspirations</h3>
+  <p>
+    My goal is to continue developing my skills in software engineering while maintaining strong problem-solving
+    and debugging practices. I am focused on building reliable, organized, and user-friendly systems.
+  </p>
+  <p>
+    <strong>Short-term goal:</strong> strengthen core web development skills.<br>
+    <strong>Long-term goal:</strong> contribute to high-impact engineering projects.
+  </p>
+</section>
 
-    <section class="card">
-      <h3>Video</h3>
-      <video controls width="640">
-        <source src="video.mp4" type="video/mp4" />
-        Your browser does not support the video element.
-      </video>
-      <p class="note">This video is stored locally in the project folder.</p>
-    </section>
+<section>
+  <h3>Image</h3>
+  <img src="profile.jpg" alt="Profile image of Ayana Leonard" width="250">
+</section>
 
-    <section class="card" id="contact">
-      <h3>Contact Me</h3>
+<section>
+  <h3>Audio</h3>
+  <audio controls>
+    <source src="audio.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</section>
 
-      <!-- action attribute required by directions -->
-      <form class="contact-form" action="https://wp.zybooks.com/form-viewer.php" method="GET">
-        <label for="firstName">First name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+<section>
+  <h3>Video</h3>
+  <video controls width="600">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</section>
 
-        <label for="lastName">Last name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+<section>
+  <h3>Contact Me</h3>
 
-        <label for="companyName">Company name:</label>
-        <input type="text" id="companyName" name="companyName">
+  <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
 
-        <label for="email">Email address:</label>
-        <input type="email" id="email" name="email" required>
+    <label>First Name:</label><br>
+    <input type="text" name="firstName"><br><br>
 
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="(254) 245-6286">
+    <label>Last Name:</label><br>
+    <input type="text" name="lastName"><br><br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+    <label>Company Name:</label><br>
+    <input type="text" name="company"><br><br>
 
-        <fieldset class="fieldset">
-          <legend>Best contact time:</legend>
+    <label>Email Address:</label><br>
+    <input type="email" name="email"><br><br>
 
-          <input type="radio" id="timeAm" name="contactTime" value="am">
-          <label for="timeAm">a.m.</label>
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone"><br><br>
 
-          <input type="radio" id="timePm" name="contactTime" value="pm">
-          <label for="timePm">p.m.</label>
+    <label>Message:</label><br>
+    <textarea name="message" rows="4"></textarea><br><br>
 
-          <input type="radio" id="timeAny" name="contactTime" value="anytime" checked>
-          <label for="timeAny">anytime</label>
-        </fieldset>
+    <p>Best Contact Time:</p>
+    <input type="radio" name="time" value="am"> a.m.<br>
+    <input type="radio" name="time" value="pm"> p.m.<br>
+    <input type="radio" name="time" value="anytime" checked> anytime<br><br>
 
-        <label for="contactMethod">Preferred contact method:</label>
-        <select id="contactMethod" name="contactMethod">
-          <option value="phone">Phone</option>
-          <option value="email">Email</option>
-          <option value="text">Text</option>
-        </select>
+    <label>Preferred Contact Method:</label><br>
+    <select name="method">
+      <option value="phone">Phone</option>
+      <option value="email">Email</option>
+      <option value="text">Text</option>
+    </select><br><br>
 
-        <button class="btn" type="submit">Submit</button>
-      </form>
-    </section>
+    <button type="submit">Submit</button>
 
-    <section class="card">
-      <h3>Sources</h3>
-      <p>
-        Career goals reflect the focus areas shown in my résumé (Leonard, 2025). Page requirements and form action follow
-        the D276 Website Evaluator instructions (WGU, n.d.).
-      </p>
-      <h4>References</h4>
-      <ul class="ref-list">
-        <li>Leonard, A. (2025). <em>Ayana Yvonne Leonard</em> [Résumé].</li>
-        <li>WGU. (n.d.). <em>D276 Website Evaluator</em>.</li>
-      </ul>
-    </section>
-  </main>
+  </form>
+</section>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="yearStamp3">2026</span> Ayana Leonard • <a href="#contact">Contact</a></p>
-  </footer>
+<section>
+  <h3>Sources</h3>
+  <p>
+    This content reflects personal career goals (Leonard, 2025). Assignment structure follows the D276 Website
+    Evaluator guidelines (WGU, n.d.).
+  </p>
+
+  <h4>References</h4>
+  <ul>
+    <li>Leonard, A. (2025). Ayana Yvonne Leonard [Résumé].</li>
+    <li>WGU. (n.d.). D276 Website Evaluator.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="yearStamp3"></span> Ayana Leonard</p>
+</footer>
+
 </body>
 </html>
