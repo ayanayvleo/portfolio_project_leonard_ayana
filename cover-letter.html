@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cover Letter - Ayana Leonard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cover Letter | Ayana Leonard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Ayana Leonard</h1>
-        <nav>
-            <ul>
-                <li><a href="resume.html">Résumé</a></li>
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="career-goals.html">Career Goals</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <h1>Ayana Leonard</h1>
+    <h2 class="subtitle">Cover Letter</h2>
+    <span class="tagline">Professional Communication Sample</span>
+  </header>
 
-    <main>
-        <section>
-            <h2>To the Hiring Committee</h2>
-            <p>I am a <mark>Quartermaster & Chemical Equipment Repairer</mark> veteran (Leonard, 2024).</p>
-            <article>
-                <p>During my time in the <em>US Army</em>, I maintained complex electromechanical systems (Leonard, 2024).</p>
-                <p>I am now applying these skills to <strong>Software Engineering</strong> at WGU.</p>
-            </article>
-            <br>
-            <p>Sincerely,<br>Ayana Leonard</p>
-        </section>
-    </main>
+  <nav class="site-nav" aria-label="Primary">
+    <ul class="nav-list">
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="cover-letter.html" aria-current="page">Cover Letter</a></li>
+      <li><a href="career-goals.html">Career Goals</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>Reference: Leonard, A. Y. (2024). Ayana Yvonne Leonard Professional Resume.</p>
-    </footer>
+  <main class="container">
+    <section class="card">
+      <article>
+        <h3>Cover Letter</h3>
+        <hr>
+
+        <p><span class="salutation">Dear Hiring Manager,</span></p>
+
+        <p>
+          I am writing to express my interest in an entry-level software engineering opportunity.
+          I bring a strong foundation of discipline and technical troubleshooting through my background in the
+          <strong>U.S. Army</strong> and my continued education in software engineering.
+        </p>
+
+        <p>
+          I approach work with structure, ownership, and curiosity. My goal is to contribute to a team that values
+          clean solutions and continuous improvement. <em>I enjoy debugging because it turns confusion into clarity.</em>
+        </p>
+
+        <p>
+          In recent projects, I practiced HTML, CSS, and JavaScript by building a multi-page website with reusable styling,
+          navigation, and interactive scripting. I also prioritize clear writing and professional formatting, because good
+          communication prevents mistakes.
+        </p>
+
+        <p>
+          I would welcome the chance to discuss how my technical mindset and reliability can support your team.
+          <mark>Thank you</mark> for your time and consideration.
+        </p>
+
+        <p>
+          Sincerely,<br>
+          <strong>Ayana Leonard</strong>
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3>Sources</h3>
+      <p>
+        I referenced cover-letter formatting conventions (Purdue OWL, 2024) and general HTML text elements guidance
+        (MDN, 2024).
+      </p>
+      <h4>References</h4>
+      <ul class="ref-list">
+        <li>Purdue OWL. (2024). Cover Letters. (General reference).</li>
+        <li>MDN Web Docs. (2024). HTML text content elements. (General reference).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="yearStamp2">2026</span> Ayana Leonard</p>
+  </footer>
 </body>
 </html>
