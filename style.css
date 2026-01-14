@@ -1,0 +1,69 @@
+/* 1. Universal Selector - Applies to every element */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Element Selector & Typography (Font, Color, Style) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 3. ID Selector - Targets the specific date div or contact section */
+#current-date, #contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #005a8c; /* Border requirement */
+    margin: 20px 0; /* Margin requirement */
+}
+
+/* 4. Class Selector - Used for specific spans or containers */
+.tech-span {
+    color: #d9534f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* 5. Descendant Selector - Targets list items specifically inside the nav */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none; /* List-style property requirement */
+}
+
+/* 6. Pseudo-class Selector - Changes link color on hover */
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* 7. Additional Box Model Properties (Padding/Margin/Border) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+header {
+    background-color: #005a8c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
